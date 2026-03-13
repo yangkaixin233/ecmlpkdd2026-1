@@ -1,0 +1,205 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# VS Code
+.vscode/
+.claude/
+
+# PyCharm
+.idea/
+
+# Machine Learning / Deep Learning
+# Model checkpoints (权重文件)
+*.pth
+*.pt
+*.pkl
+*.h5
+*.hdf5
+result/
+*/result/
+checkpoints/
+*/checkpoints/
+
+# Results folders - 只忽略模型权重，允许实验结果文件自动跟踪
+# 常见模型权重格式
+**/results/*.pth      # PyTorch
+**/results/*.pt       # PyTorch (另一种扩展名)
+**/results/*.pkl      # Pickle序列化
+**/results/*.h5       # Keras/TensorFlow
+**/results/*.hdf5     # HDF5格式
+**/results/*.ckpt     # TensorFlow checkpoints
+**/results/*.safetensors  # HuggingFace Safetensors
+**/results/*.bin      # 二进制模型文件
+**/results/*.model    # 通用模型文件
+# JSON/CSV/TXT/PNG等实验记录文件会自动被跟踪
+
+# Prediction results
+*_result_*.npy
+*_result_*.csv
+*preds*.npy
+*probs*.npy
+
+# Large datasets (keep smaller reference files)
+*.mat
+*.zip
+*.tar.gz
+*.tgz
+*/data/*.mat
+*/data/*.zip
+*/dataset/*.zip
+*/dataset/tfinance/
+*/dataset/tsocial/
+
+# DGL cache and data
+*.dgl
+.dgl/
+
+# Additional data file types
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.bin
+*.dat
+*.tsv
+*.rar
+*.7z
+
+# Specific large data files (without extensions)
+*/dataset/tfinance
+*/dataset/tsocial
+*/dataset/fdcompcn
+*/dataset/amazon
+*/dataset/yelp
+
+# Additional data directories
+*/data/*.npy
+*/data/*.npz
+
+# Analysis results - 允许提交实验结果
+# *_analysis*.json  # 注释掉，允许提交
+# dataset_analysis_results.json  # 注释掉，允许提交
+# dgl_analysis_results.json  # 注释掉，允许提交
+# complete_dataset_analysis.json  # 注释掉，允许提交
+# fixed_*.json  # 注释掉，允许提交
+
+# Dataset folder (root level)
+dataset/
+.Trash-0/
+
+# Overnight experiment logs folders - 允许提交实验日志
+# overnight_exp_*/  # 注释掉，允许提交
+# logs_v4_*/  # 注释掉，允许提交
+# autorcf_*/  # 注释掉，允许提交
+
+# Logs and temporary files
+# *.log  # 注释掉，允许提交log文件用于实验记录
+# logs/  # 注释掉，允许提交logs文件夹
+*.tmp
+*.temp
+*~
+
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific large files
+# KeHGN-R data (NEW)
+code-1-KeHGN-R/FKG/*/TransE_l2/*.npy
+code-1-KeHGN-R/FKG/*/entities.tsv
+code-1-KeHGN-R/dataset/*/fv.csv
+code-1-KeHGN-R/dataset/*/*.npz
+code-1-KeHGN-R/model/
+
+# SplitGNN data
+code-2*/SplitGNN-master/data/Amazon/
+code-2*/SplitGNN-master/data/YelpChi/
+code-2*/SplitGNN-master/data/FDCompCN/
+code-2*/SplitGNN-master/data/*.mat
+code-2*/SplitGNN-master/data/*.dgl
+code-2*/SplitGNN-master/data/*.zip
+code-2*/SplitGNN-master.zip
+
+# BWGNN data
+code-3/Rethinking-Anomaly-Detection-master/dataset/
+code-3/Rethinking-Anomaly-Detection-master/dataset/tfinance
+code-3/Rethinking-Anomaly-Detection-master/dataset/tfinance/
+code-3/Rethinking-Anomaly-Detection-master/dataset/tsocial
+code-3/Rethinking-Anomaly-Detection-master/dataset/tsocial/
+code-3/Rethinking-Anomaly-Detection-master/dataset/fdcompcn
+code-3/Rethinking-Anomaly-Detection-master/dataset/*.zip
+code-3/Rethinking-Anomaly-Detection-master.zip
+code-3/plot.zip
+
+# PyGSP data
+code-3/plot/pygsp-master/pygsp/data/pointclouds/*.mat
+code-3/plot/pygsp-master/fig/*.pdf
+
+# AutoDL runtime state
+.autodl/autopanel.monitor.db
+dgl/
+v10_hypersearch_*_checkpoint_*.json
+
+# Evidence splits data files (large JSONL/CSV files)
+evidence_splits/
